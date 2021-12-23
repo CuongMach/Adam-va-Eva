@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="apple.js"></script>
+    <script src="human.js"></script>
+</head>
+<body>
+<script>
+    let t1 = new Apple()
+    let t2 = new Apple()
+    let n1 = new Human("Adam", true, 40)
+    let n2 = new Human("eva", false, 38)
+
+    n1.eat(t1)
+
+    document.write("Cân nặng của Adam sau khi ăn táo là :" + n1.weight + " khối lượng quả táo sau khi bị ăn là : " + t1.weight + "<br>")
+
+    n2.eat(t2)
+
+    document.write("Cân nặng của Eva sau khi ăn táo là :" + n2.weight + " khối lượng quả táo sau khi bị ăn là : " + t2.weight)
+
+</script>
+</body>
+</html>
